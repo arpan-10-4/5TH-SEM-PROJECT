@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Dashboard | QuickPick</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css"> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css"> </head>
+
+<body>
+    <div class="dashboard-container">
+        <aside class="dashboard-sidebar bg-dark text-white">
+            <div class="sidebar-brand p-3">
+                <a class="navbar-brand" href="#">
+                    <img src="../logo.png" alt="QuickPick Logo" class="me-2" style="height: 30px;">
+                    <span class="brand-text">QuickPick</span>
+                </a>
+            </div>
+            <hr class="sidebar-divider">
+            <ul class="nav flex-column p-3">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"><i class="bi bi-speedometer2 me-2"></i> Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-box-seam me-2"></i> My Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-plus-square me-2"></i> Add New Product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-cart-fill me-2"></i> Orders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-chat-dots-fill me-2"></i> Messages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-bar-chart-line-fill me-2"></i> Analytics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-gear-fill me-2"></i> Settings</a>
+                </li>
+                <li class="nav-item mt-4">
+                    <a class="nav-link" href="/Log in Page/login.html"><i class="bi bi-box-arrow-left me-2"></i> Logout</a>
+                </li>
+            </ul>
+        </aside>
+
+        <main class="dashboard-content p-4">
+            <h2 class="dashboard-title mb-4">Seller Dashboard</h2>
+
+            <section class="mb-4">
+                <h3>Overview</h3>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="dashboard-card bg-white shadow-sm rounded p-3">
+                            <i class="bi bi-box-seam-fill text-primary mb-2" style="font-size: 2rem;"></i>
+                            <h4 class="mb-0">Total Products</h4>
+                            <span class="text-muted">125</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="dashboard-card bg-white shadow-sm rounded p-3">
+                            <i class="bi bi-cart-check-fill text-success mb-2" style="font-size: 2rem;"></i>
+                            <h4 class="mb-0">New Orders</h4>
+                            <span class="text-muted">15</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="dashboard-card bg-white shadow-sm rounded p-3">
+                            <i class="bi bi-currency-dollar text-info mb-2" style="font-size: 2rem;"></i>
+                            <h4 class="mb-0">Total Earnings</h4>
+                            <span class="text-muted">$12,500</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-4">
+                <h3>Recent Orders</h3>
+                <div class="dashboard-card bg-white shadow-sm rounded p-3">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Customer</th>
+                                    <th>Date</th>
+                                    <th>Amount</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#1001</td>
+                                    <td>John Doe</td>
+                                    <td>2025-05-06</td>
+                                    <td>$45.00</td>
+                                    <td><span class="badge bg-warning">Pending</span></td>
+                                    <td><a href="#" class="btn btn-sm btn-outline-primary">View</a></td>
+                                </tr>
+                                <tr>
+                                    <td>#1002</td>
+                                    <td>Jane Smith</td>
+                                    <td>2025-05-05</td>
+                                    <td>$78.50</td>
+                                    <td><span class="badge bg-success">Shipped</span></td>
+                                    <td><a href="#" class="btn btn-sm btn-outline-primary">View</a></td>
+                                </tr>
+                                </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>Product Statistics</h3>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="dashboard-card bg-white shadow-sm rounded p-3">
+                            <h4>Top Selling Product</h4>
+                            <p class="mb-0">Awesome Gadget X <span class="text-muted">(58 Sales)</span></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="dashboard-card bg-white shadow-sm rounded p-3">
+                            <h4>Lowest Stock Product</h4>
+                            <p class="mb-0">Basic T-Shirt (12 Units)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script> </body>
+
+</html>

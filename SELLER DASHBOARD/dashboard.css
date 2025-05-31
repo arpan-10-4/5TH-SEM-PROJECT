@@ -1,0 +1,92 @@
+/* dashboard.css */
+
+/* Dashboard Container */
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar Styles */
+.dashboard-sidebar {
+    width: 250px;
+    flex-shrink: 0;
+    transition: width 0.3s ease;
+}
+
+.sidebar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 1rem 0;
+}
+
+.nav-link {
+    padding: 0.75rem 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.nav-link i {
+    font-size: 1.1rem;
+    margin-right: 0.5rem;
+}
+
+/* Main Content Styles */
+.dashboard-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background to contrast with sidebar */
+}
+
+.dashboard-title {
+    color: var(--dark-color);
+    font-weight: 700;
+}
+
+/* Dashboard Card */
+.dashboard-card {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Small adjustments to match landing page styles */
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.badge-warning {
+    background-color: var(--warning-color);
+    color: var(--dark-color);
+}
+
+.badge-success {
+    background-color: var(--success-color);
+    color: white;
+}
+
+.badge-info {
+    background-color: var(--info-color);
+    color: white;
+}
+
+.badge-danger {
+    background-color: var(--danger-color);
+    color: white;
+}
